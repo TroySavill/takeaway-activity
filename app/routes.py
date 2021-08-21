@@ -4,9 +4,13 @@ from app import app
 
 @app.route('/')
 @app.route('/index')
-@app.route('/orders')
-@app.route('/menu')
 def index():
     return render_template('index.html', title = 'Home')
+
+@app.route('/orders')
 def orders():
-    return render_template('orders.html', title = 'Orders')
+    return render_template('orders.html')
+
+@app.route('/menu')
+def menu():
+    return render_template('menu.html')
