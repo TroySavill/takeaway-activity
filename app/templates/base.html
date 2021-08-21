@@ -6,8 +6,8 @@
     <body>
         <p>The Takeaway Shop</p>
         <a href="{{ url_for('index') }}">Home</a>
-        <a href="">Menu</a>
-        <a href="">Orders</a>
+        <a href="{{ url_for('menu') }}">Menu</a>
+        <a href="{{ url_for('orders' }}">Orders</a>
         <hr>
         {% block content %}
         {% endblock %}
