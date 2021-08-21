@@ -8,3 +8,5 @@ from app import app
 @app.route('/menu')
 def index():
     return render_template('index.html', title = 'Home')
+def orders():
+    return render_template('orders.html', title = 'Orders')
