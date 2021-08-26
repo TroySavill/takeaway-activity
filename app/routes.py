@@ -9,8 +9,8 @@ def index():
 
 @app.route('/orders')
 def orders():
-    return render_template('orders.html')
+    return render_template('orders.html', title = 'Orders')
 
 @app.route('/menu')
 def menu():
-    return render_template('menu.html')
+    return render_template('menu.html', title = 'Menu')
